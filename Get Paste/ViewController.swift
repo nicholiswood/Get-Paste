@@ -12,7 +12,7 @@ import Social
 class ViewController: UIViewController {
     
     
-    
+    //ADDED TO GITHUB
     @IBOutlet weak var iosVersionLabel: UILabel!
     @IBOutlet weak var introducedPhrase: UILabel!
     @IBOutlet weak var clipText: UILabel!
