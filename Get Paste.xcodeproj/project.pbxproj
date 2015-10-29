@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E37802E81BE1B2D10071FCB9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E37802E71BE1B2D10071FCB9 /* .gitignore */; settings = {ASSET_TAGS = (); }; };
 		E3C6DE1D1BD54FFB0066CD3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C6DE1C1BD54FFB0066CD3E /* AppDelegate.swift */; };
 		E3C6DE1F1BD54FFB0066CD3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C6DE1E1BD54FFB0066CD3E /* ViewController.swift */; };
 		E3C6DE221BD54FFB0066CD3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C6DE201BD54FFB0066CD3E /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E37802E71BE1B2D10071FCB9 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = "Get Paste/.gitignore"; sourceTree = "<group>"; };
 		E3C6DE191BD54FFB0066CD3E /* Get Paste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get Paste.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C6DE1C1BD54FFB0066CD3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3C6DE1E1BD54FFB0066CD3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		E3C6DE101BD54FFB0066CD3E = {
 			isa = PBXGroup;
 			children = (
+				E37802E71BE1B2D10071FCB9 /* .gitignore */,
 				E3C6DE1B1BD54FFB0066CD3E /* Get Paste */,
 				E3C6DE1A1BD54FFB0066CD3E /* Products */,
 			);
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37802E81BE1B2D10071FCB9 /* .gitignore in Resources */,
 				E3C6DE271BD54FFB0066CD3E /* LaunchScreen.storyboard in Resources */,
 				E3C6DE241BD54FFB0066CD3E /* Assets.xcassets in Resources */,
 				E3C6DE221BD54FFB0066CD3E /* Main.storyboard in Resources */,
