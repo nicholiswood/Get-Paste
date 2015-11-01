@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         clipText.text = pasteboardString
         //need to turn this into a string somehow String(pasteboardString) does not work.
         
-        introducedPhrase.text = "This is what your clipboard has right now:"
+        introducedPhrase.text = "This is what is on your clipboard:"
         
     }
 
