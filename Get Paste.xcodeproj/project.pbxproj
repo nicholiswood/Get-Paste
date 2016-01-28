@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E37802E81BE1B2D10071FCB9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E37802E71BE1B2D10071FCB9 /* .gitignore */; settings = {ASSET_TAGS = (); }; };
+		E37802E81BE1B2D10071FCB9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E37802E71BE1B2D10071FCB9 /* .gitignore */; };
+		E3B0EE4D1C5AAECD0073F919 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B0EE491C5AAECD0073F919 /* Fabric.framework */; };
+		E3B0EE4E1C5AAECD0073F919 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B0EE4A1C5AAECD0073F919 /* TwitterKit.framework */; };
+		E3B0EE4F1C5AAECD0073F919 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E3B0EE4B1C5AAECD0073F919 /* TwitterKitResources.bundle */; };
+		E3B0EE501C5AAECD0073F919 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B0EE4C1C5AAECD0073F919 /* TwitterCore.framework */; };
 		E3C6DE1D1BD54FFB0066CD3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C6DE1C1BD54FFB0066CD3E /* AppDelegate.swift */; };
 		E3C6DE1F1BD54FFB0066CD3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C6DE1E1BD54FFB0066CD3E /* ViewController.swift */; };
 		E3C6DE221BD54FFB0066CD3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C6DE201BD54FFB0066CD3E /* Main.storyboard */; };
@@ -17,6 +21,10 @@
 
 /* Begin PBXFileReference section */
 		E37802E71BE1B2D10071FCB9 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = "Get Paste/.gitignore"; sourceTree = "<group>"; };
+		E3B0EE491C5AAECD0073F919 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		E3B0EE4A1C5AAECD0073F919 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		E3B0EE4B1C5AAECD0073F919 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		E3B0EE4C1C5AAECD0073F919 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		E3C6DE191BD54FFB0066CD3E /* Get Paste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get Paste.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C6DE1C1BD54FFB0066CD3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3C6DE1E1BD54FFB0066CD3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B0EE4D1C5AAECD0073F919 /* Fabric.framework in Frameworks */,
+				E3B0EE501C5AAECD0073F919 /* TwitterCore.framework in Frameworks */,
+				E3B0EE4E1C5AAECD0073F919 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,10 @@
 		E3C6DE101BD54FFB0066CD3E = {
 			isa = PBXGroup;
 			children = (
+				E3B0EE491C5AAECD0073F919 /* Fabric.framework */,
+				E3B0EE4A1C5AAECD0073F919 /* TwitterKit.framework */,
+				E3B0EE4B1C5AAECD0073F919 /* TwitterKitResources.bundle */,
+				E3B0EE4C1C5AAECD0073F919 /* TwitterCore.framework */,
 				E37802E71BE1B2D10071FCB9 /* .gitignore */,
 				E3C6DE1B1BD54FFB0066CD3E /* Get Paste */,
 				E3C6DE1A1BD54FFB0066CD3E /* Products */,
@@ -77,6 +92,7 @@
 				E3C6DE151BD54FFB0066CD3E /* Sources */,
 				E3C6DE161BD54FFB0066CD3E /* Frameworks */,
 				E3C6DE171BD54FFB0066CD3E /* Resources */,
+				E3B0EE481C5AAEC10073F919 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,10 +145,27 @@
 				E3C6DE271BD54FFB0066CD3E /* LaunchScreen.storyboard in Resources */,
 				E3C6DE241BD54FFB0066CD3E /* Assets.xcassets in Resources */,
 				E3C6DE221BD54FFB0066CD3E /* Main.storyboard in Resources */,
+				E3B0EE4F1C5AAECD0073F919 /* TwitterKitResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E3B0EE481C5AAEC10073F919 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 28f87d157d83b09d3710d1352d020cf247d1d087 e8e0bb2d25b5f4d8b1f61d05992cb9fb277d6d336e7bd850c08121aa6e5f20d0";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E3C6DE151BD54FFB0066CD3E /* Sources */ = {
@@ -251,6 +284,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Get Paste/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nicholiswood.Get-Paste";
@@ -262,6 +299,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Get Paste/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nicholiswood.Get-Paste";
