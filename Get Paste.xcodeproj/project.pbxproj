@@ -12,6 +12,7 @@
 		E3B0EE4E1C5AAECD0073F919 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B0EE4A1C5AAECD0073F919 /* TwitterKit.framework */; };
 		E3B0EE4F1C5AAECD0073F919 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E3B0EE4B1C5AAECD0073F919 /* TwitterKitResources.bundle */; };
 		E3B0EE501C5AAECD0073F919 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B0EE4C1C5AAECD0073F919 /* TwitterCore.framework */; };
+		E3B0EE521C5AB03D0073F919 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B0EE511C5AB03D0073F919 /* Crashlytics.framework */; };
 		E3C6DE1D1BD54FFB0066CD3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C6DE1C1BD54FFB0066CD3E /* AppDelegate.swift */; };
 		E3C6DE1F1BD54FFB0066CD3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C6DE1E1BD54FFB0066CD3E /* ViewController.swift */; };
 		E3C6DE221BD54FFB0066CD3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C6DE201BD54FFB0066CD3E /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		E3B0EE4A1C5AAECD0073F919 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		E3B0EE4B1C5AAECD0073F919 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		E3B0EE4C1C5AAECD0073F919 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		E3B0EE511C5AB03D0073F919 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		E3C6DE191BD54FFB0066CD3E /* Get Paste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get Paste.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C6DE1C1BD54FFB0066CD3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3C6DE1E1BD54FFB0066CD3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			files = (
 				E3B0EE4D1C5AAECD0073F919 /* Fabric.framework in Frameworks */,
 				E3B0EE501C5AAECD0073F919 /* TwitterCore.framework in Frameworks */,
+				E3B0EE521C5AB03D0073F919 /* Crashlytics.framework in Frameworks */,
 				E3B0EE4E1C5AAECD0073F919 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +54,7 @@
 		E3C6DE101BD54FFB0066CD3E = {
 			isa = PBXGroup;
 			children = (
+				E3B0EE511C5AB03D0073F919 /* Crashlytics.framework */,
 				E3B0EE491C5AAECD0073F919 /* Fabric.framework */,
 				E3B0EE4A1C5AAECD0073F919 /* TwitterKit.framework */,
 				E3B0EE4B1C5AAECD0073F919 /* TwitterKitResources.bundle */,

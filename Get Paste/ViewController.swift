@@ -8,11 +8,16 @@
 
 import UIKit
 import Social
+import Crashlytics
 
 class ViewController: UIViewController {
     
     
-    //ADDED TO GITHUB
+    @IBAction func forceCrash(sender: AnyObject) {
+        Crashlytics.sharedInstance().crash()
+    }
+    
+    
     @IBOutlet weak var iosVersionLabel: UILabel!
     @IBOutlet weak var introducedPhrase: UILabel!
     @IBOutlet weak var clipText: UILabel!
