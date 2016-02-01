@@ -47,6 +47,10 @@ class ViewController: UIViewController {
 
     
     @IBAction func tweetAction(sender: AnyObject) {
+        // TODO: Move this method and customize the name and parameters to track your key metrics
+        //       Use your own string attributes to track common values over time
+        //       Use your own number attributes to track median value over time
+        Answers.logCustomEventWithName("Share Pressed", customAttributes: ["Category":"Comedy"])
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
             
             let tweetController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
@@ -77,6 +81,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // TODO: Track the user action that is important for you.
+        Answers.logContentViewWithName("AppLaunch", contentType: "ViewController", contentId: "2", customAttributes: ["Screen Orientation":"Landscape"])
+
         
 
         
