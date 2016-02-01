@@ -8,12 +8,14 @@
 
 import UIKit
 import Social
+import TwitterKit
 import Crashlytics
 
 class ViewController: UIViewController {
     
     
     @IBAction func forceCrash(sender: AnyObject) {
+        Answers.logCustomEventWithName("Force Crash", customAttributes: nil)
         Crashlytics.sharedInstance().crash()
     }
     
@@ -45,21 +47,21 @@ class ViewController: UIViewController {
         
     }
 
-    
+
     @IBAction func tweetAction(sender: AnyObject) {
-        // TODO: Move this method and customize the name and parameters to track your key metrics
-        //       Use your own string attributes to track common values over time
-        //       Use your own number attributes to track median value over time
-        Answers.logCustomEventWithName("Share Pressed", customAttributes: ["Category":"Comedy"])
+        Answers.logCustomEventWithName("Share Pressed", customAttributes: nil)
+        
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
             
-            let tweetController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-
-            
-            tweetController.setInitialText("Here's what was on my clipboard: \(pasteboardString)")
-            
-            
-            self.presentViewController(tweetController, animated: true, completion: nil)
+            let composer = TWTRComposer()
+            composer.setText("Here's what was on my clipboard: \(pasteboardString)")
+            composer.showFromViewController(self) { result in
+                if result == .Done {
+                    print("Tweet composition completed.")
+                } else if result == .Cancelled {
+                    print("Tweet composition cancelled.")
+                }
+            }
         } else {
             
             let alert = UIAlertController(title: "Account Problem 😓", message: "Please log into your twitter!", preferredStyle: UIAlertControllerStyle.Alert)
